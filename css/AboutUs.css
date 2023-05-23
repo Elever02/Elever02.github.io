@@ -1,0 +1,158 @@
+.about-us {
+	background-color: black;
+	font-style: bold;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	padding: 10px;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	background-color: black;
+    margin-top: -20px;
+}
+.logo{
+    width: 180px;
+    cursor: pointer;   
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #350bf0;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.aboutus {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family= "raleway", arial, sans-serif;
+}
+
+.card {
+	position: relative;
+	width: 300px;
+	height: 200px;
+	border-radius: 10px;
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+	transition: 0.3s;
+	padding: 30px 50px;
+	background: #fff;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.card:hover{
+	height: 350px;
+}
+
+.imgbox {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform: translateY(-60px);
+	border-radius: 5px;
+}
+
+img {
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+}
+
+.content {
+	padding: 10px 20px;
+	text-align: center;
+	transform: translateY(-450px);
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.card:hover > .content {
+	opacity: 1;
+	transform: translateY(-20px);
+}
+
+footer {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	width: 600px;
+	border: 2px solid #333;
+	padding: 15px 10px;
+	background-color: white;
+}
+
+.container h2 {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+textarea {
+	height: 30px;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid #aaa;
+	background-color: white;
+	margin-bottom: 10px;
+	resize: none;
+	outline: none;
+	transition: .5s;
+}
+
+input[type="submit"], button {
+	padding: 10px 15px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+input[type="submit"] {
+	background-color: white;
+}
+
+button {
+	color: #333;
+	background-color: transparent;
+}
+
+.btn {
+	display: none;
+}
